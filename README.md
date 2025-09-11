@@ -1,4 +1,3 @@
-# nodejs-todo-backend
 # NodeJS Todo Backend
 
 This project was built by me while following [Backend Full Course | NodeJS ExpressJS PostgreSQL Prisma & Docker](https://youtu.be/9BD9eK9VqXA?si=WNLBMTg5wE7fwEir) by Smoljames on YouTube.  
@@ -44,13 +43,13 @@ This repository contains my implementation of Chapter 2 and Chapter 3 from the c
 3. `npm run dev`
 4. download REST CLIENT extension
    
-##Chapter-2 - "A simple Back-end Server" 
+Chapter-2 - "A simple Back-end Server" 
 Setting up the Server 
 Learning about the api end points and website points 
 Just trying CRUD operations from the backend showing the response on the web 
 return the Html page to the browser from the backend 
 
-##Chapter 3 – "A full stack todo application that uses a Nodejs backend , a SQLITE database and jwt authentiation"
+Chapter 3 – "A full stack todo application that uses a Nodejs backend , a SQLITE database and jwt authentiation"
 In this chapter, we build a full backend for a Todo app with the following features:
 
 “Summary of Chapter 3 backend work provided by ChatGPT (OpenAI, 2025).”
