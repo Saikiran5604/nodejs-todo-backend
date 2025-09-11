@@ -1,3 +1,9 @@
+/*Implementation done by: D Saikiran Reddy
+ * Learning reference: "Backend Full Course | NodeJS ExpressJS PostgreSQL Prisma & Docker"
+ * Instructor: Smoljames
+ * YouTube Course Link: https://youtu.be/9BD9eK9VqXA?si=WNLBMTg5wE7fwEir
+ *
+ * Note: This project was built by following along with the tutorial for educational purposes.*/
 import express from 'express'
 import path,{ dirname } from 'path'
 import { fileURLToPath } from 'url'
