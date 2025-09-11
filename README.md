@@ -43,53 +43,60 @@ This repository contains my implementation of Chapter 2 and Chapter 3 from the c
 3. `npm run dev`
 4. download REST CLIENT extension
    
-Chapter-2 - "A simple Back-end Server" 
-Setting up the Server 
-Learning about the api end points and website points 
-Just trying CRUD operations from the backend showing the response on the web 
-return the Html page to the browser from the backend 
+## Chapter-2 - "A simple Back-end Server"
 
-Chapter 3 – "A full stack todo application that uses a Nodejs backend , a SQLITE database and jwt authentiation"
+Setting up the Server  
+Learning about the api end points and website points  
+Just trying CRUD operations from the backend showing the response on the web  
+Return the Html page to the browser from the backend  
+
+---
+
+## Chapter 3 – "A full stack todo application that uses a Nodejs backend, a SQLITE database and jwt authentiation"
+
 In this chapter, we build a full backend for a Todo app with the following features:
 
 “Summary of Chapter 3 backend work provided by ChatGPT (OpenAI, 2025).”
-1.Express.js Server
-Sets up a backend server to handle HTTP requests.
-Defines routes for authentication and todos (/auth and /todos).
 
-2.SQLite Database
-Stores users and their todos persistently.
-Uses better-sqlite3 for database operations.
-Supports CRUD operations (Create, Read, Update, Delete) for todos.
+1. **Express.js Server**  
+   Sets up a backend server to handle HTTP requests.  
+   Defines routes for authentication and todos (/auth and /todos).
 
-3.JWT Authentication
-Registers and logs in users.
-Generates a token on successful login/registration.
-Protects the /todos routes so only authenticated users can access their tasks.
+2. **SQLite Database**  
+   Stores users and their todos persistently.  
+   Uses better-sqlite3 for database operations.  
+   Supports CRUD operations (Create, Read, Update, Delete) for todos.
 
-4.Frontend Integration
-Serves a simple frontend (index.html) for the Todo app.
-Uses localStorage to store JWT tokens in the browser.
-Handles login, signup, adding, updating, and deleting todos.
+3. **JWT Authentication**  
+   Registers and logs in users.  
+   Generates a token on successful login/registration.  
+   Protects the /todos routes so only authenticated users can access their tasks.
 
-5.Routing & Middleware
-authRoutes.js → handles login/register routes.
-todoRoutes.js → handles CRUD for todos.
-authMiddleware.js → verifies JWT tokens for protected routes.
+4. **Frontend Integration**  
+   Serves a simple frontend (index.html) for the Todo app.  
+   Uses localStorage to store JWT tokens in the browser.  
+   Handles login, signup, adding, updating, and deleting todos.
 
-6.Key Workflow
-User registers → token is created → user can access todos.
-User logs in → token is validated → user sees their todos.
-Token stored in localStorage → used for all protected requests.
+5. **Routing & Middleware**  
+   authRoutes.js → handles login/register routes.  
+   todoRoutes.js → handles CRUD for todos.  
+   authMiddleware.js → verifies JWT tokens for protected routes.
 
-we can test the working of this Todo app :
-I prefer to test it with REST CLIENT extension 
-Intitial we need to signup with an username(email) and password Hence we get an token issued for it 
-Then if with same credentials we are able to login  ( one more token will be generated -The token will be when we need to add todo-list to users )
-For every user there is a default todo list called "Hello :) Add your first todo" then we can try fetch all the todo-list of a token by giving their token (Authorization)
-we can create new todo-list ,update ,delete by providing the user token 
+6. **Key Workflow**  
+   User registers → token is created → user can access todos.  
+   User logs in → token is validated → user sees their todos.  
+   Token stored in localStorage → used for all protected requests.
 
-Another way is simple you can do it in browser itself 
-the token are stored in local storage (you can check right-click->inspect->application->local-storage)
+---
+
+We can test the working of this Todo app:  
+I prefer to test it with REST CLIENT extension  
+Intitial we need to signup with an username(email) and password Hence we get an token issued for it  
+Then if with same credentials we are able to login ( one more token will be generated -The token will be when we need to add todo-list to users )  
+For every user there is a default todo list called "Hello :) Add your first todo" then we can try fetch all the todo-list of a token by giving their token (Authorization)  
+We can create new todo-list, update, delete by providing the user token  
+
+Another way is simple you can do it in browser itself  
+The token are stored in local storage (you can check right-click->inspect->application->local-storage)
 
 
