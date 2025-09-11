@@ -1,13 +1,17 @@
 // the address of this server connected to the network is :
 //URL -> http://localhost:8383
 //IP ->127.0.0.1:8383
-
+ /*Implementation done by: D Saikiran Reddy
+ * Learning reference: "Backend Full Course | NodeJS ExpressJS PostgreSQL Prisma & Docker"
+ * Instructor: Smoljames
+ * YouTube Course Link: https://youtu.be/9BD9eK9VqXA?si=WNLBMTg5wE7fwEir
+ *
+ * Note: This project was built by following along with the tutorial for educational purposes.*/
 const express = require('express')
 const app =express()
 const PORT =8383
 
 let data = ['james']
-
 
 //middleware 
 app.use(express.json())
